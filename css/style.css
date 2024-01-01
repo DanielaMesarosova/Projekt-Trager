@@ -16,8 +16,8 @@ html { box-sizing: border-box; }
 	--primary: #004769;
 	--accent: #fc0;
 
-	--font-default: 'Open Sans', sans-serif;
-	--font-special: 'Raleway', sans-serif;
+	/* Font je hotovy!!! */
+	--font-family: 'Open Sans', sans-serif;
 
 	--spacer: 1rem;
 	--spacer-quarter: calc(var(--spacer) / 4);
