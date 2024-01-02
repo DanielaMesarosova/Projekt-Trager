@@ -1,9 +1,60 @@
 // Hlavni nastaveni barev, velikosti, atd
-$modra: #5d56ae;
+$primary: #093a62;
+$secondary: black;
+$terciary: white;
+
+// pouziva se i pokud chci vice typu pisem
+$font-base: 'Open Sans', sans-serif;
+
+// nebo si muzu nastavit mezeru pokud se mi nekde casto opakuje
+$spacer: 30px;
+
+// je vhodne ale misto h1 nebo p stylovat idealne tridy, takze <header class="header"> nebo <h1 class="nadpis"> trida ma pak pri stylovani pred sebou tecku. 
+
+h1 {
+    color: $primary;
+    text-align: left;
+    padding: $spacer/2;
+}
+
+// lze i vnorit do sebe, tento odstavec je uvnitr body 
+body {
+    font-family: $font-base;
+
+    p{
+        text-align: justify;
+    }
+}
+
+// odkaz muzu taky vnorit, nize uvedene mi nastyluje odkaz s bilym textem, na ketry kdyz kliknu, zabarvi se background do tmave modra, misto a pouziju ampersant
+a{
+    color: white;
+
+    &:hover,
+    &:focus{
+        background-color: blue;
+        color: white;
+        }
+
+    &:active{
+        background-color: darkblue;
+    }
+}
+
+// vnorovani lze pouzit i na mediaquery a nemusime tam psat extra pro co to je nastaveno
+
+footer{
+    margin-top: $spacer;
+    padding: $spacer / 2;
+    background-color: black;
+    color: white;
 
 
-// formaty prvku
+    @media (min-width: 700px) {
+            background-color: greenyellow;
+        }
 
-h1{
-    color: $modra;
+    @media (min-width: 900px) {
+            background-color: blue;
+        }
 }
