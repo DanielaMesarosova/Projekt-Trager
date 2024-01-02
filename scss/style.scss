@@ -1,5 +1,9 @@
+// Hlavni nastaveni barev, velikosti, atd
 $modra: #5d56ae;
 
+
+// formaty prvku
+
 h1{
-    color: modra;
+    color: $modra;
 }
