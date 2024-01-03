@@ -9,52 +9,103 @@ $font-base: 'Open Sans', sans-serif;
 // nebo si muzu nastavit mezeru pokud se mi nekde casto opakuje
 $spacer: 30px;
 
-// je vhodne ale misto h1 nebo p stylovat idealne tridy, takze <header class="header"> nebo <h1 class="nadpis"> trida ma pak pri stylovani pred sebou tecku. 
 
-h1 {
-    color: $primary;
+.header{
+    background-color: $primary;
+    color: $terciary;
+
+
+}
+
+.logo_whole{
+    display: flex;
+}
+
+.header_logo{
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.logo_icon{
+    height: 100px;
+
+}
+
+.home_icon{
+    height: 20px;
+}
+
+.menu {
+    background-color: $primary;
+  
+      &__list {
+          margin: 0;
+          padding: 2px;
+          display: flex;
+          justify-content: right;
+          list-style: none;
+      }
+  
+      &__link {
+          display: block;
+          padding: 10px 20px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+  
+          &:hover,
+          &:focus {
+              background-color: white;
+              color: $primary;
+          }
+
+      }
+  
+  }
+
+
+
+// FOOTER
+
+.footer {
+    background-color: $primary;
+    padding: 20px;
+    color: white;
+    // text-align: center;
+    display: grid;
+  }
+
+.footer a {
+    color: $terciary;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus {
+	color: var(--accent);
+}
+
+.footer__grid {
+	padding: $spacer;
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__copyright {
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+
+.footer__links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
     text-align: left;
-    padding: $spacer/2;
 }
 
-// lze i vnorit do sebe, tento odstavec je uvnitr body 
-body {
-    font-family: $font-base;
-
-    p{
-        text-align: justify;
-    }
-}
-
-// odkaz muzu taky vnorit, nize uvedene mi nastyluje odkaz s bilym textem, na ketry kdyz kliknu, zabarvi se background do tmave modra, misto a pouziju ampersant
-a{
-    color: white;
-
-    &:hover,
-    &:focus{
-        background-color: blue;
-        color: white;
-        }
-
-    &:active{
-        background-color: darkblue;
-    }
-}
-
-// vnorovani lze pouzit i na mediaquery a nemusime tam psat extra pro co to je nastaveno
-
-footer{
-    margin-top: $spacer;
-    padding: $spacer / 2;
-    background-color: black;
-    color: white;
-
-
-    @media (min-width: 700px) {
-            background-color: greenyellow;
-        }
-
-    @media (min-width: 900px) {
-            background-color: blue;
-        }
+.footer__title {
+	color: white;
 }

@@ -1,40 +1,84 @@
-h1 {
+.header {
+  background-color: #093a62;
+  color: white;
+}
+
+.logo_whole {
+  display: flex;
+}
+
+.header_logo {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.logo_icon {
+  height: 100px;
+}
+
+.home_icon {
+  height: 20px;
+}
+
+.menu {
+  background-color: #093a62;
+}
+.menu__list {
+  margin: 0;
+  padding: 2px;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+.menu__link {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu__link:hover, .menu__link:focus {
+  background-color: white;
   color: #093a62;
+}
+
+.footer {
+  background-color: #093a62;
+  padding: 20px;
+  color: white;
+  display: grid;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: var(--accent);
+}
+
+.footer__grid {
+  padding: 30px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__copyright {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: left;
-  padding: 15px;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-}
-body p {
-  text-align: justify;
-}
-
-a {
+.footer__title {
   color: white;
-}
-a:hover, a:focus {
-  background-color: blue;
-  color: white;
-}
-a:active {
-  background-color: darkblue;
-}
-
-footer {
-  margin-top: 30px;
-  padding: 15px;
-  background-color: black;
-  color: white;
-}
-@media (min-width: 700px) {
-  footer {
-    background-color: greenyellow;
-  }
-}
-@media (min-width: 900px) {
-  footer {
-    background-color: blue;
-  }
 }/*# sourceMappingURL=style.css.map */
