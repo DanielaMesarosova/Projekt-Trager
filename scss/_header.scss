@@ -2,18 +2,30 @@
 @use 'basis';
 
 .header{
-    background-color: $primary;
-    color: $terciary;
+    background-color: colors.$primary;
+    color: colors.$terciary;
 
 }
 
-.header_logo{
-    margin-left: 10px;
-    margin-top: 10px;
+.logo{
+    padding-left: 10px;
+    padding-top: 60px;
+
+    .icon{
+        height: 100px;
+    }
+
+    .title{
+
+    }
+
+
+
 }
 
-.icon{
-    height: 100px;
+
+.name{
+    height: 20px;
 }
 
 
@@ -28,7 +40,7 @@
 }
 
 .menu {
-    background-color: $primary;
+    background-color: colors.$primary;
   
       &__list {
           margin: 0;
@@ -42,19 +54,19 @@
           display: block;
           padding: 10px 20px;
           color: white;
-          color: $primary;
           text-decoration: none;
           font-weight: bold;
   
           &:hover,
           &:focus {
               background-color: white;
-              color: $primary;
+              color: colors.$primary;
           }
-
-          &home_icon{
-            height: 20px;
-        }
-
       }
+
+
+.icon{
+    height: 20px;
     }
+  
+  }

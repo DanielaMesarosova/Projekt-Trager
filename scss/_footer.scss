@@ -2,20 +2,19 @@
 @use 'basis';
 
 .footer {
-    background-color: $primary;
-    // padding: 50px;
+    background-color: colors.$primary;
     color: white;
     display: grid;
   }
 
 .footer a {
-    color: $terciary;
+    color: colors.$terciary;
     text-decoration: none;
 }
 
 
 .footer__grid {
-	padding: $spacer;
+	padding: 20px;
 	color: white;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -30,7 +29,7 @@
     &:hover,
     &:focus {
         background-color: white;
-        color: $primary;
+        color: colors.$primary;
     }
 }
 
