@@ -3,21 +3,27 @@
   color: white;
 }
 
-.logo_whole {
-  display: flex;
-}
-
 .header_logo {
   margin-left: 10px;
   margin-top: 10px;
 }
 
-.logo_icon {
+.icon {
   height: 100px;
 }
 
 .home_icon {
   height: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 .menu {

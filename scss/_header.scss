@@ -1,0 +1,60 @@
+@use 'colors';
+@use 'basis';
+
+.header{
+    background-color: $primary;
+    color: $terciary;
+
+}
+
+.header_logo{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.icon{
+    height: 100px;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.menu {
+    background-color: $primary;
+  
+      &__list {
+          margin: 0;
+          padding: 2px;
+          display: flex;
+          justify-content: right;
+          list-style: none;
+      }
+  
+      &__link {
+          display: block;
+          padding: 10px 20px;
+          color: white;
+          color: $primary;
+          text-decoration: none;
+          font-weight: bold;
+  
+          &:hover,
+          &:focus {
+              background-color: white;
+              color: $primary;
+          }
+
+          &home_icon{
+            height: 20px;
+        }
+
+      }
+    }

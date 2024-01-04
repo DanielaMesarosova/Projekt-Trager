@@ -1,0 +1,41 @@
+@use 'colors';
+@use 'basis';
+
+.footer {
+    background-color: $primary;
+    // padding: 50px;
+    color: white;
+    display: grid;
+  }
+
+.footer a {
+    color: $terciary;
+    text-decoration: none;
+}
+
+
+.footer__grid {
+	padding: $spacer;
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-align: left;
+
+    &:hover,
+    &:focus {
+        background-color: white;
+        color: $primary;
+    }
+}
+
+.footer__copyright {
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
