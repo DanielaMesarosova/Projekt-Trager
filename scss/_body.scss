@@ -10,14 +10,20 @@
 .citat{
     font-size: 30px;
     font-style: italic;
-    color: grey;
+    color: white;
 }
 
 .kontejner-jedna{
-    background-image: url("images/title.jpg");
-    padding: 150px 30px 150px 30px;
+    background-image: url("/images/title.jpg");
+    padding: 20px 500px 150px 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+h1{
+    color: colors.$primary;
+    padding: 50px 200px 50px 200px;
+    text-align: center;
 }
 
