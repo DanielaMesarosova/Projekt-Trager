@@ -7,6 +7,24 @@
     display: grid;
   }
 
+
+  .logo{
+    padding-left: 10px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+
+    .icon{
+        height: 100px;
+    }
+}
+
+
 .footer a {
     color: colors.$terciary;
     text-decoration: none;
@@ -20,21 +38,23 @@
 	grid-template-columns: repeat(4, 1fr);
 }
 
-.footer__links {
+.footer__links{
 	margin: 0;
 	padding: 0;
 	list-style: none;
     text-align: left;
+}
 
-    &:hover,
-    &:focus {
+    a:hover,
+    a:focus {
         background-color: white;
         color: colors.$primary;
     }
-}
+
 
 .footer__copyright {
 	font-size: 14px;
 	text-align: center;
 	color: white;
+    margin-bottom: 20px;
 }

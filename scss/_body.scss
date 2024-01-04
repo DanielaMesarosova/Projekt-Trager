@@ -1,2 +1,23 @@
 @use 'colors';
 @use 'basis';
+
+// .kontejner-jedna,
+// .kontejner-dva{
+//     margin-left: 20px;
+//     margin-right: 10px;
+// }
+
+.citat{
+    font-size: 30px;
+    font-style: italic;
+    color: grey;
+}
+
+.kontejner-jedna{
+    background-image: url("images/title.jpg");
+    padding: 150px 30px 150px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

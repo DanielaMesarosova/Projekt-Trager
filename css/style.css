@@ -24,10 +24,39 @@ h3::after {
   color: blue;
 }
 
+.citat {
+  font-size: 30px;
+  font-style: italic;
+  color: grey;
+}
+
+.kontejner-jedna {
+  background-image: url("images/title.jpg");
+  padding: 150px 30px 150px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .footer {
   background-color: #093a62;
   color: white;
   display: grid;
+}
+
+.logo {
+  padding-left: 10px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.logo .icon {
+  height: 100px;
 }
 
 .footer a {
@@ -48,7 +77,9 @@ h3::after {
   list-style: none;
   text-align: left;
 }
-.footer__links:hover, .footer__links:focus {
+
+a:hover,
+a:focus {
   background-color: white;
   color: #093a62;
 }
@@ -57,6 +88,7 @@ h3::after {
   font-size: 14px;
   text-align: center;
   color: white;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -71,6 +103,7 @@ h3::after {
 .logo .icon {
   height: 100px;
 }
+
 .name {
   height: 20px;
 }
