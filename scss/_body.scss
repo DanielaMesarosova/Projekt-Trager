@@ -7,6 +7,9 @@
 //     margin-right: 10px;
 // }
 
+
+// HLAVNI STRANKA
+
 .citat{
     font-size: 30px;
     font-style: italic;
@@ -24,6 +27,38 @@
 h1{
     color: colors.$primary;
     padding: 50px 200px 50px 200px;
+    font-family: basis.$font-base;
     text-align: center;
+    font-size: 30px;
+    margin: 0;
 }
+
+// carka pod nadpisem, nezobrazuje se
+.h1::after{
+    content: "";
+    display: block;
+    width: 500px;
+    height: 10px;
+    background-color: tomato;
+    margin-top: 10px;
+}
+
+.text{
+    font-family: basis.$font-base;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 0px 200px 50px 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 

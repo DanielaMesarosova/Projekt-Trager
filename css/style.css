@@ -1,3 +1,12 @@
+/* intuitivnejsi box-sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
 }
@@ -41,7 +50,53 @@ h3::after {
 h1 {
   color: #093a62;
   padding: 50px 200px 50px 200px;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+.h1::after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 10px;
+  background-color: tomato;
+  margin-top: 10px;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  text-wrap: wrap;
+  padding: 0px 200px 50px 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer__grid {
+  display: grid;
+  height: 250px;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.footer__grid-column-levy {
+  grid-column-start: 3;
+}
+
+.footer__grid-column-pravy {
+  grid-column-start: 4;
+  grid-row-start: 1;
 }
 
 .footer {

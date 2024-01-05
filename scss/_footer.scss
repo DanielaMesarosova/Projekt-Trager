@@ -1,11 +1,30 @@
 @use 'colors';
 @use 'basis';
 
+
+.footer__grid{
+    display: grid;
+    height: 250px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.footer__grid-column-levy{
+    grid-column-start: 3;
+}
+
+.footer__grid-column-pravy{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
 .footer {
     background-color: colors.$primary;
     color: white;
     display: grid;
   }
+
+
 
 
   .logo{
